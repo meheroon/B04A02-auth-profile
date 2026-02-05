@@ -1,5 +1,5 @@
 <?php
-// classes/Auth.php
+
 declare(strict_types=1);
 
 class Auth

@@ -1,5 +1,5 @@
 <?php
-// classes/Database.php
+
 declare(strict_types=1);
 
 class Database

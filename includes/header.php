@@ -1,5 +1,5 @@
 <?php
-// includes/header.php
+
 ?>
 <!doctype html>
 <html lang="en">

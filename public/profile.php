@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = "New password must be at least 6 characters (or keep it empty).";
     }
 
-    // Unique email check (if changed)
+    
     if (!$errors && $email !== $currentUser['email']) {
         $existing = $userModel->findByEmail($email);
         if ($existing) {
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $userModel->update((int)$userId, $name, $email, $newPass === '' ? null : $newPass);
         $success = "Profile updated successfully.";
 
-        // reload user
+     
         $currentUser = $userModel->findById((int)$userId);
     }
 }
